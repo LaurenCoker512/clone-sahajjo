@@ -1,3 +1,65 @@
 .help {
+    margin: 7.5rem 1.8rem;
     
+
+    &__content {
+        display: flex;
+        width: 72rem;
+        margin: 0 auto;
+    }
+
+    &__video {
+        width: 29.25rem;
+        height: 22.125rem;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+
+        & img {
+            height: 100%;
+        }
+
+        &__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(50, 50, 50, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                width: 6rem;
+                height: 6rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__text {
+        width: 41rem;
+        padding-left: 5.5rem;
+
+        &__title {
+            font-weight: 400;
+            font-size: 2.8rem;
+        }
+
+        & p {
+            color: $mediumGray;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        &__btn {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    }
 }

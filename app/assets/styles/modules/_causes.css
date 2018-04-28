@@ -1,3 +1,34 @@
 .causes {
+    padding: 4rem 6.5rem 3rem 6.5rem;
+    background-color: $paleGray;
     
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 71rem;
+        margin: 5rem auto;
+
+        &__item {
+            width: 22.5rem;
+            border-bottom: 2px solid $mainPink;
+
+            &__img {
+                width: 100%;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+
+                &__title {
+                    color: $mediumGray;
+                    font-weight: 400;
+                }
+
+            }
+
+        }
+    }
 }

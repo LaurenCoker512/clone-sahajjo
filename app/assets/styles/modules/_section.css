@@ -1,0 +1,12 @@
+.section {
+    &__title {
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+
+    &__subtitle {
+        color: $mediumGray;
+        font-weight: 300;
+        max-width: 35rem;
+    }
+}

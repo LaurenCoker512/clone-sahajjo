@@ -1,0 +1,17 @@
+.button {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.9rem 2.25rem;
+    background-color: $mainPink;
+    color: #fff;
+    border: 1px solid $mainPink;
+    border-radius: 0.2rem;
+    transition: all 0.2s linear;
+
+    &:hover {
+        color: $mainPink;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

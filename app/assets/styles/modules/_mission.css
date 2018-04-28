@@ -1,3 +1,35 @@
 .mission {
-    
+    margin: 6rem auto;
+    width: 69.625rem;
+    display: flex;
+
+    &__text {
+        width: 41.25rem;
+        padding-right: 4rem;
+    }
+
+    &__causes {
+        
+
+        &__cause {
+            display: flex;
+
+            &__text {
+                color: $mediumGray;
+                font-weight: 300;
+
+                & h3 {
+                    font-weight: 300;
+                    font-size: 1.4rem;
+                    color: $darkGray;
+                }
+            }
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+    }
 }

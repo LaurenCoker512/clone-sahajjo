@@ -19,27 +19,27 @@
         </div>
         <div class="header__nav">
             <nav>
-                <ul>
-                    <li>
+                <ul class="header__nav__main-menu">
+                    <li class="header__nav__main-menu__item">
                         <a href="#">Home</a>
-                        <ul>
+                        <ul class="header__nav__sub-menu">
                             <li><a href="#">Homepage One</a></li>
                             <li><a href="#">Homepage Two</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Event</a></li>
-                    <li><a href="#">Causes</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li>
+                    <li class="header__nav__main-menu__item"><a href="#">Event</a></li>
+                    <li class="header__nav__main-menu__item"><a href="#">Causes</a></li>
+                    <li class="header__nav__main-menu__item"><a href="#">About Us</a></li>
+                    <li class="header__nav__main-menu__item">
                         <a href="#">Blog</a>
-                        <ul>
+                        <ul class="header__nav__sub-menu">
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Blog Details</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="header__nav__main-menu__item">
                         <a href="#">Pages</a>
-                        <ul>
+                        <ul class="header__nav__sub-menu">
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Our Team</a></li>
                             <li><a href="#">Booking Page</a></li>
@@ -50,77 +50,89 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Buy Now</a></li>
+                    <li class="header__nav__main-menu__item"><a href="#">Contact</a></li>
+                    <li class="header__nav__main-menu__item"><a href="#">Buy Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="large-hero">
-        <div class="large-hero__text">
-            <h1 class="large-hero__text__header">
-                <span class="large-hero__text__header__small">Give a Hand to Make</span>
-                <span class="large-hero__text__header__small">The Better World</span>
-            </h1>
-            <h2 class="large-hero__text__subheader">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</h2>
-            <button class="large-hero__text__btn button">Donate Now</button>
+        <div class="large-hero__overlay">
+            <div class="large-hero__text">
+                <h1 class="large-hero__text__header">
+                    <div class="large-hero__text__header--small">Give a Hand to Make</div>
+                    <div class="large-hero__text__header--large">The Better World</div>
+                </h1>
+                <p class="large-hero__text__subheader">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+                <button class="large-hero__text__btn button">Donate Now</button>
+            </div>
         </div>
+        
     </section>
 
     <section class="help">
-        <div class="help__video">
-            <img src="assets/images/1-3.jpg">
-            <div class="help__video__overlay">
-
+        <div class="help__content">
+            <div class="help__video">
+                <img src="assets/images/1-3.jpg">
+                <div class="help__video__overlay">
+                    <img src="assets/images/large-play-2.png">
+                </div>
             </div>
-        </div>
-        <div class="help__text">
-            <h2 class="help__text__title">How Can You Help?</h2>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-            <div class="help__text__progress"></div>
-            <button class="help__text__btn button">Donate Now</button>
+            <div class="help__text">
+                <h2 class="help__text__title">How Can You Help?</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                <div class="help__text__progress"></div>
+                <button class="button help__text__btn">Donate Now</button>
+            </div>
         </div>
     </section>
 
     <section class="causes">
-        <h2 class="causes__title">Featured <span class="pink">Causes</span></h2>
-        <p class="causes__subtitle">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+        <h2 class="section__title causes__title">Featured <span class="pink">Causes</span></h2>
+        <p class="section__subtitle causes__subtitle">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
         <div class="causes__gallery">
             <div class="causes__gallery__item">
                 <div class="causes__gallery__item__img">
                     <img src="assets/images/riossold-2-372x252.jpg">
                 </div>
-                <h3 class="causes__gallery__item__title">Nor again is there anyone who loves or pursues.</h3>
-                <p class="causes__gallery__item__amount">$226 of $120 Raised</p>
-                <div class="causes__gallery__item__progress"></div>
-                <div class="causes__gallery__item__donate">
-                    <form class="causes__gallery__item__donate__num"></form>
-                    <button class="causes__gallery__item__donate__btn button">Donate Now</button>
+                <div class="causes__gallery__item__text">
+                    <h3 class="causes__gallery__item__text__title">Nor again is there anyone who loves or pursues.</h3>
+                    <p class="causes__gallery__item__text__amount">$226 of $120 Raised</p>
+                    <div class="causes__gallery__item__text__progress"></div>
+                    <div class="causes__gallery__item__text__donate">
+                    <form class="causes__gallery__item__text__donate__num"></form>
+                    <button class="causes__gallery__item__text__donate__btn button">Donate Now</button>
                 </div>
+            </div>   
             </div>
             <div class="causes__gallery__item">
                 <div class="causes__gallery__item__img">
                     <img src="assets/images/sn-2-372x252.jpg">
                 </div>
-                <h3 class="causes__gallery__item__title">At vero eos et accusamus et ius odio dignissimos.</h3>
-                <p class="causes__gallery__item__amount">$245 of $600 Raised</p>
-                <div class="causes__gallery__item__progress"></div>
-                <div class="causes__gallery__item__donate">
-                    <form class="causes__gallery__item__donate__num"></form>
-                    <button class="causes__gallery__item__donate__btn button">Donate Now</button>
+                <div class="causes__gallery__item__text">
+                    <h3 class="causes__gallery__item__text__title">At vero eos et accusamus et ius odio dignissimos.</h3>
+                    <p class="causes__gallery__item__text__amount">$245 of $600 Raised</p>
+                    <div class="causes__gallery__item__text__progress"></div>
+                    <div class="causes__gallery__item__text__donate">
+                        <form class="causes__gallery__item__text__donate__num"></form>
+                        <button class="causes__gallery__item__text__donate__btn button">Donate Now</button>
+                    </div>
                 </div>
+                
             </div>
             <div class="causes__gallery__item">
                 <div class="causes__gallery__item__img">
                     <img src="assets/images/riossold-2-372x252.jpg">
                 </div>
-                <h3 class="causes__gallery__item__title">Generat on the Internet all the Lorem Ipsumubrn of.</h3>
-                <p class="causes__gallery__item__amount">$5 of $1,200 Raised</p>
-                <div class="causes__gallery__item__progress"></div>
-                <div class="causes__gallery__item__donate">
-                    <form class="causes__gallery__item__donate__num"></form>
-                    <button class="causes__gallery__item__donate__btn button">Donate Now</button>
+                <div class="causes__gallery__item__text">
+                    <h3 class="causes__gallery__item__text__title">Generat on the Internet all the Lorem Ipsumubrn of.</h3>
+                    <p class="causes__gallery__item__text__amount">$5 of $1,200 Raised</p>
+                    <div class="causes__gallery__item__text__progress"></div>
+                    <div class="causes__gallery__item__text__donate">
+                        <form class="causes__gallery__item__text__donate__num"></form>
+                        <button class="causes__gallery__item__text__donate__btn button">Donate Now</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,24 +140,30 @@
 
     <section class="mission">
         <div class="mission__text">
-            <h2 class="mission__title">Our <span class="pink">Mission</span></h2>
+            <h2 class="section__title mission__title">Our <span class="pink">Mission</span></h2>
             <div class="mission__causes">
                 <div class="mission__causes__cause">
-                    <div class="mission__causes__cause__icon"></div>
+                    <div class="mission__causes__cause__icon">
+                        <img src="assets/images/hand-2.png">
+                    </div>
                     <div class="mission__causes__cause__text">
                         <h3>Help Little Hands</h3>
                         <p>Richard McClintock, a Latin professor at Hampden-Sydn Colleg in Virginia, looked up one of words.</p>
                     </div>
                 </div>
                 <div class="mission__causes__cause">
-                    <div class="mission__causes__cause__icon"></div>
+                    <div class="mission__causes__cause__icon">
+                        <img src="assets/images/coin-2.png">
+                    </div>
                     <div class="mission__causes__cause__text">
                         <h3>Donate For Children</h3>
                         <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
                     </div>
                 </div>
                 <div class="mission__causes__cause">
-                    <div class="mission__causes__cause__icon"></div>
+                    <div class="mission__causes__cause__icon">
+                        <img src="assets/images/dollar-2.png">
+                    </div>
                     <div class="mission__causes__cause__text">
                         <h3>Charity For Education</h3>
                         <p>Richard McClintock, a Latin professor at Hampden-Sydn Colleg in Virginia, looked up one of words.</p>
@@ -159,8 +177,8 @@
     </section>
 
     <section class="projects">
-        <h2 class="projects__title">Our <span class="pink">Projects</span></h2>
-        <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+        <h2 class="section__title projects__title">Our <span class="pink">Projects</span></h2>
+        <p class="section__subtitle projects__subtitle">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
         <div class="projects__gallery">
             <div class="projects__gallery__item">
                 <div class="projects__gallery__item__img">
@@ -187,8 +205,8 @@
     </section>
 
     <section class="volunteers">
-        <h2 class="volunteers__title">Meet Our <span class="pink">Volunteers</span></h2>
-        <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+        <h2 class="section__title volunteers__title">Meet Our <span class="pink">Volunteers</span></h2>
+        <p class="section__subtitle">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
         <div class="volunteers__gallery">
             <div class="volunteers__gallery__item">
                 <img src="assets/images/6.jpg">
@@ -222,8 +240,8 @@
     </section>
 
     <section class="events">
-        <h2 class="events__title">Upcoming <span class="pink">Events</span></h2>
-        <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+        <h2 class="section__title events__title">Upcoming <span class="pink">Events</span></h2>
+        <p class="section__subtitle">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
         <div class="events__gallery">
             <div class="events__gallery__item">
                 <img src="assets/images/Untitlsssed-1-2-571x302.jpg">
@@ -255,8 +273,8 @@
     </section>
 
     <section class="gallery">
-        <h2 class="gallery__title">Our <span class="pink">Gallery</span></h2>
-        <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+        <h2 class="section__title gallery__title">Our <span class="pink">Gallery</span></h2>
+        <p class="section__subtitle">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
         <div class="gallery__content">
             <div class="gallery__item">
                 <img src="assets/images/6-2.jpg">

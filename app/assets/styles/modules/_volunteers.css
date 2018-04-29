@@ -1,3 +1,36 @@
 .volunteers {
+    margin-top: 6.5rem;
     
+    &__wrapper {
+        width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            position: relative;
+
+            &__description {
+                position: absolute;
+                background-color: $mainPink;
+                bottom: 1.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 14.875rem;
+                color: #fff;
+                text-align: center;
+                border: 1px solid $mainPink;
+                border-radius: 0.25rem;
+
+                & h3 {
+                    font-weight: 400;
+                    font-size: 1.35rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }

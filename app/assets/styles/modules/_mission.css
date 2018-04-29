@@ -8,20 +8,40 @@
         padding-right: 4rem;
     }
 
+    &__title {
+        margin-bottom: 3rem;
+    }
+
     &__causes {
         
 
         &__cause {
             display: flex;
+            margin-bottom: 2rem;
+
+            &__icon {
+                margin-right: 1.5rem;
+
+                &__wrapper {
+                    height: 5rem;
+                    width: 5rem;
+                    border: 1px solid $mainPink;
+                    border-radius: 0.25rem;
+                    text-align: center;
+                    padding-top: 1rem;
+                }
+            }
 
             &__text {
                 color: $mediumGray;
                 font-weight: 300;
+                margin-top: -1.5rem;
 
                 & h3 {
                     font-weight: 300;
                     font-size: 1.4rem;
                     color: $darkGray;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -31,5 +51,6 @@
         overflow: hidden;
         border: 1px solid transparent;
         border-radius: 0.5rem;
+        margin-top: 3.5rem;
     }
 }

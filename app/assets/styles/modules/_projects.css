@@ -1,3 +1,78 @@
 .projects {
-    
+    height: 53rem;
+    background-image: url("../../assets/images/3-1.jpg");
+    background-size: cover;
+
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-top: 5rem;
+    }
+
+    &__wrapper {
+        width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    &__title {
+        color: #fff;
+        
+    }
+
+    &__subtitle {
+        color: #fff;
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4.5rem;
+
+        &__item {
+            background-color: #fff;
+            width: 22.5rem;
+            overflow: hidden;
+
+            &__img {
+                width: 100%;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                padding: 0.8rem 1.8rem 1rem 1.8rem;
+                display: flex;
+
+                & h3 {
+                    color: $mediumGray;
+                    font-weight: 400;
+                    font-size: 1.25rem;
+                }
+                
+            } 
+
+            &__btn {
+                margin-top: 1.5rem;
+                margin-left: 1rem;
+
+                & button {
+                    background-color: $mainPink;
+                    height: 2.75rem;
+                    width: 2.75rem;
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                    color: #fff;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        background-color: $mainGray;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }

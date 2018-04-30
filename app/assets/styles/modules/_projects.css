@@ -10,14 +10,8 @@
         padding-top: 5rem;
     }
 
-    &__wrapper {
-        width: 71.25rem;
-        margin: 0 auto;
-    }
-
     &__title {
         color: #fff;
-        
     }
 
     &__subtitle {

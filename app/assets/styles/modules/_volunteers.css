@@ -1,11 +1,7 @@
 .volunteers {
     margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
     
-    &__wrapper {
-        width: 71.25rem;
-        margin: 0 auto;
-    }
-
     &__gallery {
         display: flex;
         justify-content: space-between;
@@ -20,6 +16,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: 14.875rem;
+                height: 6.125rem;
                 color: #fff;
                 text-align: center;
                 border: 1px solid $mainPink;
@@ -29,6 +26,11 @@
                     font-weight: 400;
                     font-size: 1.35rem;
                     margin-bottom: 0;
+                }
+
+                & p {
+                    font-size: 0.9rem;
+                    margin-top: 0.5rem;
                 }
             }
         }

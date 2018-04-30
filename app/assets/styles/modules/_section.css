@@ -2,11 +2,18 @@
     &__title {
         font-weight: 300;
         font-size: 2.5rem;
+        margin-bottom: 0;
     }
 
     &__subtitle {
         color: $mediumGray;
         font-weight: 300;
         max-width: 35rem;
+        line-height: 1.5;
+    }
+
+    &__wrapper {
+        width: 71.25rem;
+        margin: 0 auto;
     }
 }

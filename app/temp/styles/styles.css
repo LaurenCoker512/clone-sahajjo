@@ -371,12 +371,19 @@ body {
 .section__title {
         font-weight: 300;
         font-size: 2.5rem;
+        margin-bottom: 0;
     }
 
 .section__subtitle {
         color: #555555;
         font-weight: 300;
         max-width: 35rem;
+        line-height: 1.5;
+    }
+
+.section__wrapper {
+        width: 71.25rem;
+        margin: 0 auto;
     }
 
 .causes {
@@ -411,16 +418,131 @@ body {
                 }
 
 .events {
-    
+    background-color: #f7f7f7;
+    padding-top: 5.5rem;
+    padding-bottom: 5rem;
 }
+
+.events__gallery {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+
+.events__gallery__item {
+            width: 34.75rem;
+            height: 18.375rem;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+
+.events__gallery__item img {
+                width: 100%;
+            }
+
+.events__gallery__item__overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgb(252,44,98);
+                background: linear-gradient(0deg, rgba(252,44,98,0.76234243697479) 0%, rgba(255,255,255,0.8491771708683473) 100%);
+            }
+
+.events__gallery__item__text {
+                position: absolute;
+                bottom: 1rem;
+                left: 1rem;
+                display: flex;
+            }
+
+.events__gallery__item__text__date {
+                    color: #fc2c62;
+                    background-color: #fff;
+                    width: 7rem;
+                    height: 3.75rem;
+                    padding: 1.2rem;
+                    padding-left: 1.5rem;
+                    border: 1px solid transparent;
+                    border-top-left-radius: 2rem;
+                    border-bottom-left-radius: 2rem;
+                    border-top-right-radius: 0.25rem;
+                    border-bottom-right-radius: 0.25rem;
+                    font-size: 1.1rem;
+                    margin-right: 1.5rem;
+                }
+
+.events__gallery__item__text__description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                }
+
+.events__gallery__item__text__description__details {
+                        font-size: 0.75rem;
+                        margin-bottom: 0;
+                    }
+
+.events__gallery__item__text__description__details__icon {
+                            margin-right: 0.5rem;
+                        }
+
+.events__gallery__item__text__description__details__when {
+                            margin-right: 0.8rem;
+                        }
+
+.events__gallery__item__text__description__title {
+                        font-weight: 400;
+                        font-size: 1.3rem;
+                        margin-bottom: 0.5rem;
+                        margin-top: 0.5rem;
+                    }
 
 .footer {
     
 }
 
 .gallery {
-    
+    margin-top: 6.5rem;
+    margin-bottom: 5rem;
 }
+
+.gallery__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+.gallery__item {
+        width: 23.125rem;
+        height: 24.375rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+.gallery__item img {
+            height: 100%;
+        }
+
+.gallery__item__popup {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            background-color: rgba(252, 44, 98, 0.8);
+            border: 1px solid #fc2c62;
+            border-radius: 0.25rem;
+            color: #fff;
+            width: 18.5rem;
+            height: 6.5rem;
+            font-size: 1.5rem;
+            padding: 2rem;
+        }
 
 .header {
     height: 5rem;
@@ -638,14 +760,8 @@ body {
         padding-top: 5rem;
     }
 
-.projects__wrapper {
-        width: 71.25rem;
-        margin: 0 auto;
-    }
-
 .projects__title {
         color: #fff;
-        
     }
 
 .projects__subtitle {
@@ -706,12 +822,8 @@ body {
 
 .volunteers {
     margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
 }
-
-.volunteers__wrapper {
-        width: 71.25rem;
-        margin: 0 auto;
-    }
 
 .volunteers__gallery {
         display: flex;
@@ -730,6 +842,7 @@ body {
                 -webkit-transform: translateX(-50%);
                         transform: translateX(-50%);
                 width: 14.875rem;
+                height: 6.125rem;
                 color: #fff;
                 text-align: center;
                 border: 1px solid #fc2c62;
@@ -740,5 +853,10 @@ body {
                     font-weight: 400;
                     font-size: 1.35rem;
                     margin-bottom: 0;
+                }
+
+.volunteers__gallery__item__description p {
+                    font-size: 0.9rem;
+                    margin-top: 0.5rem;
                 }
 

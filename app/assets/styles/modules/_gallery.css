@@ -1,3 +1,38 @@
 .gallery {
-    
+    margin-top: 6.5rem;
+    margin-bottom: 5rem;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+    &__item {
+        width: 23.125rem;
+        height: 24.375rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        position: relative;
+
+        & img {
+            height: 100%;
+        }
+
+        &__popup {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(252, 44, 98, 0.8);
+            border: 1px solid $mainPink;
+            border-radius: 0.25rem;
+            color: #fff;
+            width: 18.5rem;
+            height: 6.5rem;
+            font-size: 1.5rem;
+            padding: 2rem;
+        }
+    }
 }
